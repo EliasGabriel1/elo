@@ -1,0 +1,139 @@
+/*
+File Name: 		custom.css
+Description:  You can add your custom CSS here and it will overwrite template styles
+*/
+
+/*# sourceMappingURL=maps/custom.css.map */
+.scroll-is--active .page-thumbnail--default .ncr-page-decor__layer-3 {
+    opacity: 0.7;
+}
+
+#visits-box {
+    position: fixed;
+    right: 0;
+    top: 150px;
+    z-index: 1101;
+    background: #002a60;
+    padding: 0 10px;
+    font-weight: 900;
+    border-radius: 10px 0px 0px 10px;
+    cursor: default;
+    color:#fff;
+}
+
+.row.adjust {
+    justify-content: space-between;
+}
+
+.row.adjust .col-md-4 {
+    width: 95px;
+    text-align: center;
+}
+
+.row.adjust .col-md-4 .counter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.row.adjust .col-md-4 .counter svg{
+    min-height: 40px;
+}
+
+.zap-fixed {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1101;
+}
+
+.zap-fixed i {
+    font-size: 50px;
+    color: #007bff;
+}
+
+.page-thumbnail {
+    background: #212540d1;
+}
+
+.site-content__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.whats-buy {
+    width: 400px;
+    height: 60px;
+    font-size: 32px;
+    background: #007bff;
+    animation: pulse 1s infinite alternate;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.whats-buy:hover {
+    background: #007bff;
+}
+
+#elojob {
+    margin: 0px 0px 50px;
+}
+
+.video-lado {
+    z-index: 0;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0px 0px rgb(41, 90, 206);
+	}
+
+	100% {
+        box-shadow: 0 0px 40px -4px rgb(36, 112, 193)
+
+	}
+}
+
+@media (max-width: 768px) {
+    #visits-box {
+        top: unset !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        border-radius: 0 10px 0 0px !important;
+        width: 150px;
+    }
+
+
+    .is-hidden-mobile {
+        display: none;
+    }
+    
+    .landing-detail--left span, .landing-detail-cover--left span {
+        left: -130px !important;
+    }
+
+    .landing-detail--right span, .landing-detail-cover--right span {
+        right: -130px !important;
+    }   
+
+    .site-header--landing .main-nav:first-of-type {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .site-header--landing .main-nav:last-of-type {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .whats-buy {
+        width: 100%;
+    }
+
+    .fix-spacing {
+        margin-top: 40px;
+    }
+}
